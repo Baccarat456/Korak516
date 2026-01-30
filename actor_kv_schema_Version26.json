@@ -1,0 +1,13 @@
+{
+  "actorKeyValueStoreSchemaVersion": 1,
+  "title": "Key-Value store layout",
+  "description": "Store full page text or per-page JSON if needed for API access.",
+  "collections": {
+    "pages": {
+      "title": "Pages",
+      "description": "Full page extraction objects keyed by a canonicalized URL.",
+      "keyPrefix": "pages/",
+      "contentTypes": ["application/json"]
+    }
+  }
+}

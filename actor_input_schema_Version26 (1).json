@@ -1,0 +1,36 @@
+{
+  "title": "Input schema of the Sitemap-to-api scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "sitemaps": {
+      "title": "Sitemap URLs",
+      "type": "array",
+      "description": "List of sitemap.xml or sitemap index URLs to read and crawl.",
+      "editor": "requestListSources",
+      "prefill": [
+        {
+          "url": "https://example.com/sitemap.xml"
+        }
+      ]
+    },
+    "maxRequestsPerCrawl": {
+      "title": "Max Requests per Crawl",
+      "type": "integer",
+      "description": "Maximum number of requests that can be made by this crawler.",
+      "default": 500
+    },
+    "extractMainText": {
+      "title": "Extract main text",
+      "type": "boolean",
+      "description": "If true, attempt to extract main article/content text and a short snippet.",
+      "default": true
+    },
+    "followInternalOnly": {
+      "title": "Follow internal links only",
+      "type": "boolean",
+      "description": "If true, only follow links within the same host as each sitemap entry (helps stay within domain).",
+      "default": true
+    }
+  }
+}

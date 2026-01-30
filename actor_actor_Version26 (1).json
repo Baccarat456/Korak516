@@ -1,0 +1,18 @@
+{
+  "actorSpecification": 1,
+  "name": "Sitemap-to-api scraper",
+  "title": "Sitemap-to-api scraper",
+  "description": "Crawl sitemap(s), extract page metadata and content snippets, and store results in the default dataset for API consumption.",
+  "version": "0.0",
+  "meta": {
+    "templateId": "ai-generated-actor",
+    "generatedBy": "Gpt-4o-mini"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json",
+    "keyValueStore": "./kv_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}
